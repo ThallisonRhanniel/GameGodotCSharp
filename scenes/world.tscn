@@ -107,7 +107,7 @@ position = Vector2(828, 335)
 scale = Vector2(2, 2)
 
 [node name="Espinhos3" parent="Espinhos" instance=ExtResource("4_pqklm")]
-position = Vector2(597, 335)
+position = Vector2(598, 334)
 scale = Vector2(2, 2)
 
 [node name="Espinhos4" parent="Espinhos" instance=ExtResource("4_pqklm")]

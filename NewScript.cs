@@ -16,13 +16,13 @@ public partial class NewScript : Node
 	}
 
 	public void OnBodyEntered(Node body)
-{
-    GD.Print("Body entered: " + body.Name);
-}
+	{
+		GD.Print("Body entered: " + body.Name);
+	}	
 
 	public void OnBodyExited(Node body)
-{
-    GD.Print("Body exited: " + body.Name);
-}
+	{ 
+		GD.Print("Body exited: " + body.Name);
+	}
 
 }
