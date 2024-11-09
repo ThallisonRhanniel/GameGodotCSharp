@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://r7rk441brx3" path="res://scenes/player.tscn" id="3_ctu2x"]
 [ext_resource type="PackedScene" uid="uid://dqaeem7pr7ddo" path="res://scenes/espinhos.tscn" id="4_pqklm"]
 [ext_resource type="PackedScene" uid="uid://o6mot6fdlmsa" path="res://scenes/patinha.tscn" id="5_5sxwh"]
-[ext_resource type="Script" path="res://NewScript.cs" id="6_3g1g1"]
+[ext_resource type="Script" path="res://Scripts/Heart.cs" id="6_3g1g1"]
 [ext_resource type="Texture2D" uid="uid://cpjjh5vt1hsrl" path="res://Art Assets/Effects/Heart.png" id="7_jhxoq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i77ra"]
@@ -114,17 +114,17 @@ scale = Vector2(2, 2)
 position = Vector2(373, 335)
 scale = Vector2(2, 2)
 
-[node name="Node2D" type="Area2D" parent="."]
+[node name="Heart" type="Area2D" parent="."]
 script = ExtResource("6_3g1g1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Heart"]
 position = Vector2(267, 297)
 scale = Vector2(2, 2)
 texture = ExtResource("7_jhxoq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Heart"]
 position = Vector2(267, 297)
 shape = SubResource("CircleShape2D_3ex16")
 
-[connection signal="body_entered" from="Node2D" to="Node2D" method="OnBodyEntered"]
-[connection signal="body_exited" from="Node2D" to="Node2D" method="OnBodyExited"]
+[connection signal="body_entered" from="Heart" to="Heart" method="OnBodyEntered"]
+[connection signal="body_exited" from="Heart" to="Heart" method="OnBodyExited"]
